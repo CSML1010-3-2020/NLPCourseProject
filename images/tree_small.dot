@@ -1,0 +1,33 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="need <= 0.5\ngini = 0.886\nsamples = 940\nvalue = [176, 232, 147, 179, 155, 149, 170, 197, 34, 61]", fillcolor="#fefefa"] ;
+1 [label="semetary <= 0.5\ngini = 0.87\nsamples = 688\nvalue = [176, 125, 97, 179, 155, 25, 170, 111, 26, 30]", fillcolor="#fefffe"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="purchase <= 0.5\ngini = 0.869\nsamples = 680\nvalue = [176, 125, 88, 179, 155, 25, 170, 109, 26, 30]", fillcolor="#fefffe"] ;
+1 -> 2 ;
+3 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 3 ;
+14 [label="(...)", fillcolor="#C0C0C0"] ;
+2 -> 14 ;
+23 [label="dam <= 1.0\ngini = 0.298\nsamples = 8\nvalue = [0, 0, 9, 0, 0, 0, 0, 2, 0, 0]", fillcolor="#98eb65"] ;
+1 -> 23 ;
+24 [label="(...)", fillcolor="#C0C0C0"] ;
+23 -> 24 ;
+27 [label="(...)", fillcolor="#C0C0C0"] ;
+23 -> 27 ;
+28 [label="try <= 0.5\ngini = 0.771\nsamples = 252\nvalue = [0, 107, 50, 0, 0, 124, 0, 86, 8, 31]", fillcolor="#f4f9fe"] ;
+0 -> 28 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+29 [label="movie <= 0.5\ngini = 0.748\nsamples = 220\nvalue = [0, 102, 32, 0, 0, 114, 0, 78, 8, 16]", fillcolor="#f5fafe"] ;
+28 -> 29 ;
+30 [label="(...)", fillcolor="#C0C0C0"] ;
+29 -> 30 ;
+41 [label="(...)", fillcolor="#C0C0C0"] ;
+29 -> 41 ;
+52 [label="morning <= 0.5\ngini = 0.765\nsamples = 32\nvalue = [0, 5, 18, 0, 0, 10, 0, 8, 0, 15]", fillcolor="#f5fdf1"] ;
+28 -> 52 ;
+53 [label="(...)", fillcolor="#C0C0C0"] ;
+52 -> 53 ;
+64 [label="(...)", fillcolor="#C0C0C0"] ;
+52 -> 64 ;
+}
